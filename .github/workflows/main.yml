@@ -36,4 +36,4 @@ jobs:
           git config --global user.email "action@github.com"
           git add lista.m3u
           # Solo hace commit y push si hay cambios reales en el contenido
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Actualización automática (3h)" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit --allow-empty-message -m "" && git push)
