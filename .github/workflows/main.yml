@@ -1,7 +1,7 @@
 name: Actualizar Lista IPTV
 on:
   schedule:
-    - cron: '0 */6 * * *' # Se ejecuta cada 6 horas
+    - cron: '0 */3 * * *' # Se ejecuta cada 3 horas
   workflow_dispatch: # Permite ejecutarlo manualmente
 
 jobs:
@@ -11,14 +11,29 @@ jobs:
       - name: Checkout del código
         uses: actions/checkout@v3
 
-      - name: Descargar lista de IPFS
+      - name: Descargar y validar lista
         run: |
-          curl -L "https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_fuera_iptv.m3u?download=true&filename=lista_fuera_iptv.m3u" -o lista.m3u
+          # 1. Descargamos en un archivo temporal para no pisar el original todavía
+          # Usamos -sL (silencioso pero sigue redirecciones) y -f (falla si el server da error)
+          if curl -sL -f -m 90 "https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_fuera_iptv.m3u?download=true&filename=lista_fuera_iptv.m3u" -o temp_lista.m3u; then
+            
+            # 2. VALIDACIÓN: Comprobamos si el archivo NO está vacío y si contiene la cabecera #EXTM3U
+            if [ -s temp_lista.m3u ] && grep -q "#EXTM3U" temp_lista.m3u; then
+              mv temp_lista.m3u lista.m3u
+              echo "Descarga exitosa y validada."
+            else
+              echo "Error: El archivo descargado está vacío o no es una lista válida. Manteniendo versión anterior."
+              exit 1
+            fi
+          else
+            echo "Error: No se pudo conectar con el servidor IPFS. Manteniendo versión anterior."
+            exit 1
+          fi
 
       - name: Subir cambios a GitHub
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add lista.m3u
-          git commit -m "Lista actualizada desde IPFS" || exit 0
-          git push
+          # Solo hace commit y push si hay cambios reales en el contenido
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Actualización automática (3h)" && git push)
