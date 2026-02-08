@@ -1,8 +1,7 @@
 name: Actualizar Lista IPTV
 on:
   schedule:
-# Se ejecuta al minuto 7 de cada hora (00:07, 01:07, 02:07, etc.)
-    - cron: '7 * * * *'  
+    - cron: '0 */2 * * *'  
   workflow_dispatch: # Permite ejecutarlo manualmente
 
 jobs:
