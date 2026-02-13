@@ -85,8 +85,12 @@ acestream://d65257bb934b73647374224fd62d836815804be2
 acestream://bba1905fcd1c4975aec544047bf8e4cd23ce3fe0
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/beIN%20SPORTS%201.png" tvg-id="TR | beIN SPORTS 1" group-title="FUTBOL INT", beIN SPORTS HD 1 (TR) --> SPORT TV
 acestream://118416583faa3fb4f03800173429b6b844b43a52
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/beIN%20SPORTS%202.png" tvg-id="FR | beIN SPORTS 2" group-title="FUTBOL INT", BEIN SPORTS 2 --> ELCANO
+acestream://d96bb710c4e50323e773ce0270567d99837a89fb
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/beIN%20SPORTS%202.png" tvg-id="FR | beIN SPORTS 2" group-title="FUTBOL INT", BEIN SPORTS 2 --> SPORT TV
 acestream://edb507e38394d614c9ff55805c9d354ae13210bc
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/beIN%20SPORTS%203.png" tvg-id="FR | beIN SPORTS 3" group-title="FUTBOL INT", BEIN SPORTS 3 --> ELCANO
+acestream://229419659a062e80a088bb049137dafa9c9952fe
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/beIN%20SPORTS%203.png" tvg-id="FR | beIN SPORTS 3" group-title="FUTBOL INT", BEIN SPORTS 3 --> SPORT TV
 acestream://731bd3336ec0986ff9100efe40dbaf1473a22cf8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TNT%20Sports%201.png" tvg-id="UK | TNT Sports 1" group-title="FUTBOL INT", BT Sport 1 [UK] --> SPORT TV
@@ -122,8 +126,6 @@ acestream://50b6d2b5fd59fefb9f4fd2176994d418f2b94a80
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/ESPN%202.png" tvg-id="ESPN 2" group-title="FUTBOL INT", ESPN2 [US] --> SPORT TV
 acestream://664eb5fe460b96941aed633959a845b185cd8394
 #EXTINF:-1 tvg-logo="https://tvgidsassets.nl/v354/img/channels/120x120/468.png" tvg-id="ESPN 2" group-title="FUTBOL INT", ESPN 2 [BE] --> ELCANO
-acestream://e623929791ba2c5a45ea28a31954caff89147ebc
-#EXTINF:-1 tvg-logo="https://tvgidsassets.nl/v354/img/channels/120x120/468.png" tvg-id="ESPN 2" group-title="FUTBOL INT", ESPN 2 [BE] --> ELCANO
 acestream://9dfd7e896ad0ff817eb71e3096f0cfa11d43169b
 #EXTINF:-1 tvg-logo="https://tvgidsassets.nl/v354/img/channels/120x120/468.png" tvg-id="ESPN 2" group-title="FUTBOL INT", ESPN 2 [BE] --> SPORT TV
 acestream://3e0ba6867173f345d482d80c771f1a5dc3b37e63
@@ -153,6 +155,8 @@ acestream://87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 acestream://19f28f60c908f987b1a03da078e63320d7bf29e8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD" group-title="LA LIGA", DAZN LA LIGA 1 FHD --> NEW ERA
 acestream://d1596a3988b84a4d2711fd380eb8a53256ad74ae
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD" group-title="LA LIGA", DAZN LA LIGA 1 --> ELCANO
+acestream://cc108ae39f92c48f6c946763047bd1c9b7b7d889
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD" group-title="LA LIGA", DAZN LA LIGA 1 --> ELCANO
 acestream://9c75f1d190c518cfe0f236415b8dccc1f676ef3b
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD" group-title="LA LIGA", DAZN LA LIGA 1 --> SPORT TV
@@ -387,6 +391,10 @@ acestream://9934906503661142f97a044ae1509a294057c2ed
 acestream://8091334c82e8720fc6aa05ff0bd6d343c5bfecbf
 #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", ACB EVENTO 01 SDp ** --> ELCANO
 acestream://23bee556c002d0726c1f0cac98a1901cff0a9239
+#EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", Bein Sports TR FHDp * --> ELCANO
+acestream://e7ddca738693a902ce34fb80788b220676c15801
+#EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", Bein Sports TR SDp * --> ELCANO
+acestream://1e3451ef86d34c96aabece2ac7bcae70ba9ed767
 #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", Esport3 SDp * --> ELCANO
 acestream://ff03650163b9456d59ed5f262aa3ab2e19831e6d
 #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", Magenta Sport 1 HD (DE) --> SPORT TV
